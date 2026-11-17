@@ -1,0 +1,46 @@
+{
+  "name": "xefi/faker-php-locales-tr-tr",
+  "type": "library",
+  "description": "Faker extension to include tr_TR locale",
+  "keywords": [
+    "faker",
+    "data",
+    "locale",
+    "tr_TR"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Martin Soenen"
+    }
+  ],
+  "require": {
+    "php": "^8.3",
+    "ext-mbstring": "*",
+    "psr/container": "^2.0",
+    "xefi/faker-php": "^1.5.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11"
+  },
+  "autoload": {
+    "psr-4": {
+      "Xefi\\Faker\\TrTr\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Xefi\\Faker\\TrTr\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "faker": {
+      "providers": [
+        "Xefi\\Faker\\TrTr\\FakerTrTrServiceProvider"
+      ]
+    }
+  }
+}
